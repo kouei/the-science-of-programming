@@ -1,0 +1,19 @@
+b c d    (a) b | c | d   (b) b & c & d   (c) b & (c | d)   (d) b | (c & d)
+
+F F F     F               F               F                 F
+F F T     T               F               F                 F
+F T F     T               F               F                 F
+F T T     T               F               F                 T
+T F F     T               F               F                 T
+T F T     T               F               T                 T
+T T F     T               F               T                 T
+T T T     T               T               T                 T
+
+
+
+b c    (e) ~ b -> (b | c)   (f) ~ b = (b | c)   (g) (~ b = c) | b   (h) (b | c) & (b -> c) & (c -> b)   (i) (b = c) = (b -> c) & (c -> b)
+
+F F     F                    F                   F                   F                                   T
+F T     T                    T                   T                   F                                   T
+T F     T                    F                   T                   F                                   T
+T T     T                    F                   T                   T                                   T

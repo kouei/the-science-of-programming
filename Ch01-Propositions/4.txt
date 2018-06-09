@@ -1,0 +1,12 @@
+r : raining
+s : swimming
+rc : raining cats
+rd : raining dogs
+emh : eat my hat
+
+(a) (r | ~r) -> s
+(b) r -> ~s
+(c) rc & rd
+(d) rc | rd
+(e) (rc & rd) -> (emh & ~s)
+(f) (rc & rd & s) -> emh

@@ -1,2 +1,2 @@
-# the-science-of-programming
-Exercise Answer of "The Science of Programming"
+## Exercise Answers of The Science of Programming
+[the-science-of-programming](the-science-of-programming.jpeg)

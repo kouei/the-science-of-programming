@@ -1,0 +1,14 @@
+                                state s1        state s2
+(a) ~ (m | n)                   F               F
+(b) ~ m | n                     F               T
+(c) ~ (m & n)                   T               T
+(d) ~ m & n                     F               n
+(e) (m | n) -> p                T               F
+(f) m | (n -> p)                T               T
+(g) (m = n) & (p = q)           F               F
+(h) m = (n & (p = q))           T               F
+(i) m = (n & p = q)             F               T
+(j) (m = n) & (p -> q)          F               T
+(k) (m = n & p) -> q            T               T
+(l) (m -> n) -> (p -> q)        T               T
+(m) (m -> (n -> p)) -> q        F               T
