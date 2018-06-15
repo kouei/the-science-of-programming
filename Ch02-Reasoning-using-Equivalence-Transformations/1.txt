@@ -1,0 +1,140 @@
+# Commutative Laws
+
+E1    E2    (E1 & E2)    (E2 & E1)    (E1 & E2) = (E2 & E1)
+F     F     F            F            T
+F     T     F            F            T
+T     F     F            F            T
+T     T     T            T            T
+
+# (E1 | E2) = (E2 | E1) and (E1 = E2) = (E2 = E1) have similar proofs
+
+
+
+
+# Associative Laws
+
+E1    E2    E3    ((E1 & E2) & E3)    (E1 & (E2 & E3))    ((E1 & E2) & E3) = (E1 & (E2 & E3))
+F     F     F     F                   F                   T
+F     F     T     F                   F                   T
+F     T     F     F                   F                   T
+F     T     T     F                   F                   T
+T     F     F     F                   F                   T
+T     F     T     F                   F                   T
+T     T     F     F                   F                   T
+T     T     T     T                   T                   T
+
+# ((E1 | E2) | E3) = (E1 | (E2 | E3)) has similar proof
+
+
+
+
+# Distributive Laws
+
+E1    E2    E3    E1 | (E2 & E3)    (E1 | E2) & (E1 | E3)    E1 | (E2 & E3) = (E1 | E2) & (E1 | E3)
+F     F     F     F                 F                        T
+F     F     T     F                 F                        T
+F     T     F     F                 F                        T
+F     T     T     T                 T                        T
+T     F     F     T                 T                        T
+T     F     T     T                 T                        T
+T     T     F     T                 T                        T
+T     T     T     T                 T                        T
+
+# E1 & (E2 | E3) = (E1 & E2) | (E1 & E3) has similar proof
+
+
+
+
+# De Morgan's Laws
+
+E1    E2    ~ (E1 & E2)    ~ E1 | ~ E2    ~ (E1 & E2) = ~ E1 | ~ E2
+F     F     T              T              T
+F     T     T              T              T
+T     F     T              T              T
+T     T     F              F              T
+
+# ~ (E1 | E2) = ~ E1 & ~ E2 has similar proof
+
+
+
+
+# Law of Negation
+
+E1    ~ ~ E1    E1 = ~ ~ E1
+F     F         T
+T     T         T
+
+
+
+
+# Law of the Excluded Middle
+E1    ~ E1    E1 | ~E1
+F     T       T
+T     F       T
+
+
+
+
+# Law of Contradiction
+E1    ~ E1    E1 & ~E1
+F     T       F
+T     F       F
+
+
+
+
+# Law of Implication
+E1    E2    E1 -> E2    ~ E1 | E2    E1 -> E2 = ~ E1 | E2
+F     F     T           T            T
+F     T     T           T            T
+T     F     F           F            T
+T     T     T           T            T
+
+
+
+
+# Law of Equality
+E1    E2    E1 = E2    E1 -> E2    E2 -> E1    (E1 -> E2) & (E2 -> E1)    (E1 = E2) = (E1 -> E2) & (E2 -> E1)
+F     F     T          T           T            T                         T 
+F     T     F          T           F            F                         T
+T     F     F          F           T            F                         T
+T     T     T          T           T            T                         T
+
+
+
+
+# Laws of or-simplication
+
+E1    E1 | E1    E1 = E1 | E1
+F     F          T
+T     T          T
+
+E1    E1 | T
+F     T
+T     T
+
+E1    E1 | F    E1 = E1 | F
+F     F         T
+T     T         T
+
+E1    E2    E1 & (E1 | E2)    E1 = E1 & (E1 | E2)
+F     F     F                 T
+F     T     F                 T
+T     F     T                 T
+T     T     T                 T
+
+
+
+
+# Laws of and-simplication
+
+# similar proofs as Laws of or-simplication
+
+
+
+
+# Law of Identity
+
+E1    E1 = E1
+F     T
+T     T
