@@ -1,0 +1,29 @@
+(a) (x & y) | (z & ~ z)
+(b) (x & y) | F                   Contradiction
+(c) (x & y)                       or-simplification
+(d) (x & y) | F                   or-simplification
+(e) (x & y) | (F & z)             and-simplification
+(f) (x & y) | (F & z)             Identity
+(g) (x & y) | ((x & ~ x) & z)     Contradiction
+(h) (x & y) | (x & (~ x & z))     Associative
+(i) x & (y | (~ x & z))           Distributive
+(j) x & (y | ~ x) & (y | z)       Distributive
+(k) x & (~ x | y) & (z | y)       Commutative
+(l) x & (~ x | ~ ~ y) & (z | y)   Negation
+(m) x & ~ (x & ~ y) & (z | y)     De Morgan
+
+
+
+(a) ~ (~ b & (~ b -> z)) | z
+(b) (~ b & (~ b -> z)) -> z           Implication
+(c) (~ b & (~ ~ b | z)) -> z          Implication
+(d) (~ b & (~ ~ b | ~ ~ z)) -> z      Negation
+(e) (~ b & ~ (~ b & ~ z)) -> z        De Morgan
+(f) (~ b & ~ (~ b & ~ z)) -> z        Identity
+(g) ~ (b | (~ b & ~ z)) -> z          De Morgan
+(h) ~ ((b | ~ b) & (b | ~ z)) -> z    Distributive
+(i) ~ (T & (b | ~ z)) -> z            Excluded Middle
+(j) ~ (b | ~ z) -> z                  and-simplification
+(k) ~ ~ (b | ~ z) | z                 Implication
+(l) (b | ~ z) | z                     Negation
+(m) b | (~ z | z)                     Associative

@@ -1,0 +1,82 @@
+(a) x | (y | x) | ~ y
+    x | y | x | ~ y
+    x | x | y | ~ y
+    x | T
+    T
+
+
+(b) (x | y) & (x | ~ y)
+    x | (y & ~ y)
+    x | F
+    x
+
+
+(c) x | y | ~ x
+    y | x | ~ x
+    y | T
+    T
+
+
+(d) (x | y) & (x | ~ y) & (~ x | y) & (~ x | ~ y)
+    (x | (y & ~ y)) & (~ x | (y & ~ y))
+    (x | F) & (~ x | F)
+    x & ~ x
+    F
+
+
+(e) (x & y) | (x & ~ y) | (~ x & y) | (~ x & ~ y)
+    (x & (y | ~ y)) | (~ x & (y | ~ y))
+    (x & T) | (~ x & T)
+    x | ~ x
+    T
+
+
+(f) (~ x & y) | x
+    (~ x | x) & (y | x)
+    T & (y | x)
+    y | x
+    x | y
+
+
+(g) ~ x -> (x & y)
+    x | (x & y)
+    x
+
+
+(h) T -> (~ x -> x)
+    ~ T | (~ ~ x | x)
+    F | (x | x)
+    F | x
+    x
+
+
+(i) x -> (y -> (x & y))
+    ~ x | (~ y | (x & y))
+    ~ x | ((~ y | x) & (~ y | y))
+    ~ x | ((~ y | x) & T)
+    ~ x | (~ y | x)
+    ~ x | x | ~ y
+    T | ~ y
+    T
+
+
+(j) ~ x -> (~ x -> (~ x & y))
+    ~ ~ x | (~ ~ x | (~ x & y))
+    x | (x | (~ x & y))
+    x | x | (~ x & y)
+    x | (~ x & y)
+    (x | ~ x) & (x | y)
+    T & (x | y)
+    x | y
+
+
+(k) ~ y -> y
+    ~ ~ y | y
+    y | y
+    y
+
+
+(l) ~ y -> ~ y
+    ~ ~ y | ~ y
+    y | ~ y
+    T

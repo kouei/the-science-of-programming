@@ -12,3 +12,16 @@
 (~ T = F) = T
 
 # end of proof
+
+
+
+
+# another solution
+
+~ T = ~ (T | ~ T)
+    = ~ T & ~ ~ T
+    = ~ T & T
+    = T & ~ T
+    = F
+
+# end of proof
